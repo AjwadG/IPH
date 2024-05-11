@@ -21539,7 +21539,7 @@ a.pswp__share--download:hover {
 @keyframes customAnimationIn {
   from {
     transform-origin: center center;
-    transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0) scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale)) rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
+    transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0) scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale)) rotate3d(0, 0, 1, calc(-1 * var(--animation-custom_in-rotate)));
     opacity: var(--animation-custom_in-opacity);
   }
   to {
@@ -21556,7 +21556,7 @@ a.pswp__share--download:hover {
   }
   to {
     transform-origin: center center;
-    transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0) scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale)) rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
+    transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0) scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale)) rotate3d(0, 0, 1, calc(-1 * var(--animation-custom_in-rotate)));
     opacity: var(--animation-custom_in-opacity);
   }
 }
@@ -25672,7 +25672,7 @@ a.u-button-style.u-border-20 {
 }
 /*begin-variables font-family*/
 .u-body {
-  font-family: 'Open Sans',sans-serif;
+  font-family: Georgia,serif;
 }
 h1,
 h2,
@@ -25680,7 +25680,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Roboto,sans-serif;
+  font-family: Georgia,serif;
 }
 /*end-variables font-family*/
 /*begin-variables color*/
@@ -25701,10 +25701,10 @@ h6 {
 /*end-variables color*/
 /*begin-variables font*/
 .u-custom-font.u-text-font {
-  font-family: 'Open Sans',sans-serif !important;
+  font-family: Georgia,serif !important;
 }
 .u-custom-font.u-heading-font {
-  font-family: Roboto,sans-serif !important;
+  font-family: Georgia,serif !important;
 }
 /*end-variables font*/
 /*begin-variables colors*/
@@ -43158,7 +43158,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-menu-1 {
-  margin: -54px 0 18px auto;
+  margin: -58px 0 22px auto;
 }
 
 .u-header .u-nav-1 {
@@ -43173,7 +43173,8 @@ a.u-link.u-text-hover-grey-90:hover {
 @media (max-width: 1199px) {
   .u-header .u-menu-1 {
     width: auto;
-    margin-top: -54px;
+    margin-top: -58px;
+    margin-right: 0;
   }
 }
 
@@ -43188,16 +43189,66 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-sheet-1 {
-  min-height: 120px;
+  min-height: 156px;
+}
+
+.u-footer .u-social-icons-1 {
+  height: 32px;
+  min-height: 16px;
+  width: 74px;
+  min-width: 42px;
+  margin: 30px auto 0;
+}
+
+.u-footer .u-icon-1 {
+  color: rgb(17, 17, 17) !important;
+  height: 100%;
+}
+
+.u-footer .u-icon-2 {
+  color: rgb(197, 54, 164) !important;
+  height: 100%;
 }
 
 .u-footer .u-text-1 {
-  margin: 46px auto;
+  margin: 20px auto 46px;
 }
+@media (max-width: 1199px) {
+  .u-footer .u-social-icons-1 {
+    height: 28px;
+    width: 66px;
+  }
+}
+@media (max-width: 991px) {
+  .u-footer .u-social-icons-1 {
+    height: 32px;
+    width: 74px;
+    margin-top: 28px;
+  }
 
+  .u-footer .u-text-1 {
+    margin-top: 13px;
+    margin-bottom: 53px;
+  }
+}
+@media (max-width: 767px) {
+  .u-footer .u-social-icons-1 {
+    height: 28px;
+    width: 66px;
+    margin-top: 29px;
+  }
 
-
-
+  .u-footer .u-text-1 {
+    margin-top: 17px;
+    margin-bottom: 57px;
+  }
+}
+@media (max-width: 575px) {
+  .u-footer .u-social-icons-1 {
+    width: 116px;
+    min-width: 68px;
+  }
+}
 
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
