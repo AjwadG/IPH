@@ -320,6 +320,8 @@
 
 .u-section-4 .u-text-4 {
   font-size: 1.5rem;
+  text-transform: none;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   margin: 10px auto 0 0;
 }
@@ -1120,6 +1122,7 @@
   }
 }
 
-.u-nav-link:hover, .u-nav-item:hover {
+.u-nav-link:hover,
+.u-nav-item:hover {
   color: #147d58 !important;
 }
