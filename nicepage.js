@@ -1,14 +1,18 @@
 function populateEmail(event) {
   event.preventDefault(); // Prevent form submission
 
-  var subject = document.getElementById('text-1a71').value;
-  var name = document.getElementById('name-daf4').value;
-  var comment = document.getElementById('message-daf4').value;
+  var subject = document.getElementById("text-1a71").value;
+  var name = document.getElementById("name-daf4").value;
+  var comment = document.getElementById("message-daf4").value;
 
-  var mailtoLink = 'mailto:sfrancis@iph-institute.org'
-    + '?subject=' + encodeURIComponent(subject)
-    + '&body=Name: ' + encodeURIComponent(name)
-    + '%0A%0A%0AMessage: ' + encodeURIComponent(comment);
+  var mailtoLink =
+    "mailto:info@iph-institute.org" +
+    "?subject=" +
+    encodeURIComponent(subject) +
+    "&body=Name: " +
+    encodeURIComponent(name) +
+    "%0A%0A%0AMessage: " +
+    encodeURIComponent(comment);
 
   window.location.href = mailtoLink;
 }
